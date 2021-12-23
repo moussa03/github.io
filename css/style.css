@@ -68,6 +68,7 @@ body{
     background: white;
     font-weight: bold;
 }
+
 .projects button:hover{
     background: #ff5041;
     border: none;
@@ -276,6 +277,13 @@ margin-right: 0px;
     width: 200px;
     background: url(../img/hero_woman.png) right no-repeat;
     background-size: contain;
+}
+
+.section-header::before {
+    content: "";
+    position: absolute;
+    background: url(../img/illustration_woman.png) center right;
+    
 }
 .close-menu{
 width: 30px;
