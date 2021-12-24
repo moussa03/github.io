@@ -70,6 +70,15 @@
     margin-top: 28px;
     top: initial;
   }
+  .about_background img{
+    width: 80%;
+  }
+  .about_background{
+    text-align: center;
+  }
+  .about_content > * {
+    text-align: center !important;
+  }
 }
 
 @media(min-width:576px){

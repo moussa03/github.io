@@ -21,6 +21,10 @@ body{
     padding-right: 12px;
 }
 
+.about .container {
+    padding-left: 12px;
+    padding-right: 12px;
+}
 
 .overlay{
     position: absolute;
@@ -69,10 +73,15 @@ body{
     color: white;
 }
 
+.call_to_action button span i{
+    vertical-align: middle;
+}
 .projects{
     position: absolute;
     top: 508px;
     left: 152px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .projects button{
     border: none;
@@ -92,6 +101,9 @@ body{
     -moz-transition: background-color 0.5s;
     -ms-transition: background-color 0.5s;
     -o-transition: background-color 0.5s;
+}
+.projects button span i{
+    vertical-align: middle;
 }
 
 .call_to_action button:hover{
@@ -689,6 +701,76 @@ top: 232px;
 .service-item p:first-of-type{
     font-family: 'Inconsolata', monospace;
     font-size: 20px;
+}
+.about_background{
+    height: auto;
+    /* width: 80%; */
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    
+}
+.about_background img{
+    width: 80%;
+}
+
+.about_content > *{
+    text-align: left;
+}
+.about_content h3{
+
+    font-family: 'Inconsolata', monospace;
+
+}
+.service_about_item{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.service_about_item span:first-child{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    background: #ff5041;
+    border-radius: 50%;
+    color: white;
+}
+
+.about_background::after{
+    content: "";
+    position: absolute;
+    background: url(../img/feature_illustration.png);
+    width: 31%;
+    height: 52%;
+    background-size: cover;
+    right: 29px;
+    top: 108px;
+}
+
+.learn_more button{
+    border: none;
+    padding: 12px 29px;
+    border-radius: 5px;
+    color: #ff5041;
+    background: #d5d9de;
+    font-weight: bold;
+}
+.learn_more button:hover{
+    background:#ff5041 ;
+    color: white;
+    transition: background-color 0.4s;
+    -webkit-transition: background-color 0.4s;
+    -moz-transition: background-color 0.4s;
+    -ms-transition: background-color 0.4s;
+    -o-transition: background-color 0.4s;
+}
+.learn_more button span i{
+    vertical-align: middle;
 }
 /* .service-item p:nth-child(2){
 
