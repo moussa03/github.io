@@ -47,7 +47,7 @@
     /* drop down mobile */
     $('.plus-menu').on('click', function() {
       $(this).parent().next().slideToggle('600')
-      $(this).children(":first").toggleClass('fa-plus  fa-minus');
+      $(this).children(":first").toggleClass('bx-plus  bx-minus');
         $('.plus-menu').not(this).removeClass('active')
         $(this).addClass('active');
     });

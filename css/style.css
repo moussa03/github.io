@@ -5,9 +5,23 @@
   --container-Width-pc:950px;
   --container-Width-large-pc:1350px;
 } */
+
+.pt-8{
+    padding-top: 80px;
+}
+.pb-8{
+    padding-bottom: 80px;
+}
 body{
     font-family: 'Poppins', sans-serif;
 }
+
+.services .container{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+
 .overlay{
     position: absolute;
     background: black;
@@ -198,7 +212,7 @@ border: none;
 .plus-menu i{
     /* outline: 1px solid #ebebeb; */
    color: black;
-   font-size: 10px;
+   font-size: 13px;
 }
 
 
@@ -247,6 +261,7 @@ margin: 0;
 
 .social-icon span i{
 color: #ff5041;
+font-size: 18px;
 }
 .burger-menu{
 margin-right: 0px;
@@ -268,7 +283,7 @@ margin-right: 0px;
     content: "";
     position: absolute;
     top: 100 px;
-    top: 140px;
+    top: 124px;
     left: 10;
     left: 10px;
     left: 10;
@@ -621,6 +636,63 @@ top: 232px;
     left: -26px;
 
 }
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.content h2{
+    text-align: center;
+    /* font-family: 'Pushster', cursive; */
+    /* font-family: 'Anton', sans-serif; */
+    font-family: 'Inconsolata', monospace;
+}
+.services .service-item{
+    text-align: center;
+}
+.service-item span:hover{
+    background: #F15B43;
+    transition: background-color 0.4s;
+    -webkit-transition: background-color 0.4s;
+    -moz-transition: background-color 0.4s;
+    -ms-transition: background-color 0.4s;
+    -o-transition: background-color 0.4s;
+}
+.service-item span:hover i{
+    transition: background-color 0.4s;
+    -webkit-transition: background-color 0.4s;
+    -moz-transition: background-color 0.4s;
+    -ms-transition: background-color 0.4s;
+    -o-transition: background-color 0.4s;
+    color: white;
+}
+.service-item span{
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    align-items: center;
+    margin-right: auto;
+    border-radius: 50%;
+    background: #fff3f2;
+}
+.service-item span i{
+    font-size: 52px;
+    color: #ff5041;
+}
+.service-item p:first-of-type{
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+}
+/* .service-item p:nth-child(2){
+
+} */
 @keyframes float_menu {
     from{
         transform: translateX(750px);
