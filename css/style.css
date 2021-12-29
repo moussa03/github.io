@@ -26,6 +26,20 @@ body{
     padding-right: 12px;
 }
 
+.portfolio .container{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.skills .container{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.why_us .container {
+    padding-left: 12px;
+    padding-right: 12px;
+}
 .overlay{
     position: absolute;
     background: black;
@@ -772,6 +786,185 @@ top: 232px;
 .learn_more button span i{
     vertical-align: middle;
 }
+
+.portfolio {
+    background:#f6f8fa ;
+    position: relative;
+}
+
+/* .portfolio::after{
+    content: "";
+    position: absolute;
+    background: url("../img/shape_leftmiddle.png") 80% top;
+    width: 100%;
+    height: 80%;
+    left: 0;
+    top: 0;
+} */
+.portfolio h1{
+    margin-left: 12px;
+    margin-right: 12px;
+    font-family: 'Inconsolata', monospace;
+
+}
+
+.portfolio_element_list ul li{
+    display: inline-block;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.portfolio_image_item {
+    text-align: center;
+    padding: 15px;
+}
+
+.portfolio_element img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.portfolio__project_title{
+    position: absolute;
+    top:0px;
+    z-index: 99;
+}
+#project_title{
+    margin-top: 40px;
+}
+.portfolio_element_list{
+    position: absolute;
+    top: 68px;
+    z-index: 999;
+}
+
+
+.skills h1{
+    font-family: 'Inconsolata', monospace;
+
+}
+
+.skills button{
+    padding: 10px 25px 10px 25px;
+    /* padding-bottom: 10px; */
+    background: #ff5041;
+    color: white;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.skills button span i{
+    vertical-align: middle;
+}
+.skills button:hover{
+    background: #d5d9de;
+    color:#ff5041;
+    transition:background-color 0.3s;
+    -webkit-transition:background-color 0.3s;
+    -moz-transition:background-color 0.3s;
+    -ms-transition:background-color 0.3s;
+    -o-transition:background-color 0.3s;
+}
+.progressbar {
+    display: inline-block;
+    width: 100px;
+    margin: 25px;
+  }
+  
+  .circle {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+  }
+  
+  .circle canvas {
+    vertical-align: middle;
+  }
+  
+  .circle div {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+  }
+  
+  .circle strong i {
+    font-style: normal;
+    font-size: 0.6em;
+    font-weight: normal;
+  }
+  
+  .circle span {
+    display: block;
+    color: #aaa;
+    margin-top: 12px;
+  }
+
+  .progressbar p{
+      margin-top:20px;
+  }
+  .why_us_title {
+      text-align: center;
+  }
+  .why_us_title img{
+      width: 100%;
+  }
+  .why_us_title h2{
+      font-family:'Inconsolata', monospace;
+  }
+  .accordion-container{
+    position: relative;
+    max-width: 500px;
+    height: auto;
+    margin: 10px auto;
+  }
+  .accordion-container > h2{
+    text-align: center;
+    color: #fff;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  .set{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #f5f5f5;
+  }
+  .set > a{
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    border-bottom: 1px solid #ddd;
+    -webkit-transition:all 0.2s linear;
+    -moz-transition:all 0.2s linear;
+    transition:all 0.2s linear;
+  }
+  .set > a i{
+    float: right;
+    margin-top: 2px;
+  }
+  .set > a.active{
+    background-color:#ff5041;
+    color: #fff;
+  }
+  .content{
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    display:none;
+  }
+  .content p{
+    padding: 10px 15px;
+    margin: 0;
+    color: #333;
+  }
 /* .service-item p:nth-child(2){
 
 } */

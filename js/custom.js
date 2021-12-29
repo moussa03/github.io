@@ -63,3 +63,64 @@
           }
 
     })
+
+    /* elastinc grid */
+$(document).ready(function($) {
+    function animateElements() {
+      $('.progressbar').each(function() {
+        var elementPos = $(this).offset().top;
+        var topOfWindow = $(window).scrollTop();
+        var percent = $(this).find('.circle').attr('data-percent');
+        var percentage = parseInt(percent, 10) / parseInt(120, 10);
+        var animate = $(this).data('animate');
+        if (elementPos < topOfWindow + $(window).height() - 30 && !animate) {
+          $(this).data('animate', true);
+          $(this).find('.circle').circleProgress({
+            startAngle: -Math.PI / 2,
+            value: percent / 100,
+            thickness: 8,
+            fill: {
+              color: '#ff5041'
+            }
+          }).on('circle-animation-progress', function(event, progress, stepValue) {
+            $(this).find('div').text((stepValue * 100).toFixed(1) + "%");
+          }).stop();
+        }
+      });
+    }
+  
+    // Show animated elements
+    animateElements();
+    $(window).scroll(animateElements);
+  });
+
+  /* accordion */
+  $(document).ready(function() {
+    $(".set > a").on("click", function() {
+      event.preventDefault();
+      if ($(this).hasClass("active")) {
+        $(this).removeClass("active");
+        $(this)
+          .siblings(".content")
+          .slideUp(200);
+        $(".set > a i")
+          .removeClass("bx-minus")
+          .addClass("bx-plus");
+      } else {
+        $(".set > a i")
+          .removeClass("bx-minus")
+          .addClass("bx-plus");
+        $(this)
+          .find("i")
+          .removeClass("bx-plus")
+          .addClass("bx-minus");
+        $(".set > a").removeClass("active");
+        $(this).addClass("active");
+        $(".content").slideUp(200);
+        $(this)
+          .siblings(".content")
+          .slideDown(200);
+      }
+    });
+  });
+  
