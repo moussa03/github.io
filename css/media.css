@@ -82,6 +82,9 @@
   .skills h1{
     text-align: center;
   }
+  .why_us_title {
+    text-align: center;
+  }
 }
 
 @media(min-width:576px){
