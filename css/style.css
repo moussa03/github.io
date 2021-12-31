@@ -40,6 +40,16 @@ body{
     padding-left: 12px;
     padding-right: 12px;
 }
+
+.pricing .container {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.contact .container{
+    padding-left: 12px;
+    padding-right: 12px;
+}
 .overlay{
     position: absolute;
     background: black;
@@ -911,6 +921,10 @@ top: 232px;
   .why_us_title img{
       width: 100%;
   }
+  .why_us_title span {
+      color:#ff5041;
+      font-size: 20px;
+  }
   .why_us_title h2{
       font-family:'Inconsolata', monospace;
   }
@@ -963,9 +977,235 @@ top: 232px;
     margin: 0;
     color: #333;
   }
+
+  .vitrine {
+      background: white;
+      margin-bottom: 20px;
+  }
+  .pricing {
+      background: #f6f8fa;
+      text-align: center;
+  }
+  .pricing h1{
+    font-family:'Inconsolata', monospace;
+  }
+  .pricing-title {
+      padding-top: 20px;
+  }
+  .pricing-title h2{
+      color: #24182e;
+      font-weight: bold;
+  }
+  .vitrine ul{
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 0px;
+      list-style: none;
+      margin-bottom: 0px;
+      
+  }
+  .vitrine span{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+  }
+  .vitrine span i {
+      color: #ff5041;
+      font-size: 20px;
+  }
+
+  .vitrine button {
+    padding: 5px 45px 5px 45px;
+    background: transparent;
+    margin-bottom: 15px;
+    border: none;
+    background: #ff5041;
+    /* border-radius: 6px; */
+    color: white;
+    font-family:'Inconsolata', monospace;
+
+  }
+  .price {
+    margin-bottom: 20px;
+    position: relative;
+    max-width: 173px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    width: 174px;
+  }
+
+  .price-title {
+   
+    position: relative;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 200px;
+
+  }
+  .price-title h3{
+      position: absolute;
+      font-family:'Inconsolata', monospace;
+
+  }
+  .price h2{
+      position: absolute;
+  }
+  .price h2::after{
+      content: "DH";
+      position: absolute;
+      /* left: 0; */
+      font-size: 15px;
+  }
+
+  .vitrine:hover{
+    box-shadow:0 10px 30px 5px rgb(17 21 23 / 10%);
+}
+.vitrine button:hover{
+    background: #783732;
+}
+
+.overlay_contact {
+    background-image: url(../img/contact_bg.jpg);
+    background-size: cover;
+    height: 414px;
+    width: 100%;
+    /* position: relative; */
+    background-position: center;
+    /* z-index: 1; */
+    opacity: 0.2;
+}
+  .contact{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -109%);
+    width: 80%;
+}
+
+.contact h2{
+    font-family:'Inconsolata', monospace;
+    font-size: 43px;
+}
+
+.form-group input:first-child::after{
+    content: "";
+    position: absolute;
+    background: url('../img/user.png');
+}
+
+
+.form{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+.left-inner-addon {
+    position: relative;
+}
+.left-inner-addon input {
+    padding-left: 35px !important; 
+
+}
+.left-inner-addon input:focus,.left-inner-addon textarea:focus{
+    box-shadow: none;
+    border-color: transparent;
+}
+.left-inner-addon i {
+    position: absolute;
+    padding: 12px 12px;
+    pointer-events: none;
+    top: 10px;
+    right: 0;
+}
+
+
+.right-inner-addon {
+    position: relative;
+}
+.right-inner-addon input {
+    padding-right: 35px !important;
+}
+.right-inner-addon i {
+    position: absolute;
+    right: 0px;
+    padding: 12px 12px;
+    pointer-events: none;
+}
+
+.left-and-right-inner-addon {
+    position: relative;
+}
+.left-and-right-inner-addon input {
+    padding-right: 35px !important;
+    padding-left: 35px !important;
+}
+.left-and-right-inner-addon i.left {
+    position: absolute;
+    padding: 12px 12px;
+    pointer-events: none;
+}
+.left-and-right-inner-addon i.right {
+    position: absolute;
+    right: 0px;
+    padding: 12px 12px;
+    pointer-events: none;
+}
+
+
+.right-inner-addon-b {
+    position: relative;
+}
+.right-inner-addon-b input {
+    padding-right: 35px !important;
+}
+.right-inner-addon-b i {
+    position: absolute;
+    right: 0px;
+    padding: 9px 12px;
+    pointer-events: none;
+}
+
+input {
+    width: 100%;
+		padding: 1em !important;
+		margin: 0em !important;
+		box-sizing: border-box;
+}
+ .form button {
+    background: #ff5041;
+    border: none;
+    border-radius: 5px;
+    font-size: 19px;
+    color: #f1e8e8;
+    padding: 16px 30px;
+    font-family: 'Inconsolata', monospace;
+    width: 100%;
+ }
+ /* .form button,.left-inner-addon input,textarea.form-control {
+    min-width: 240px;
+  } */
+
 /* .service-item p:nth-child(2){
 
 } */
+.form button{
+    min-width: 240px;
+}
+
+.form-headline {
+    text-align: center;
+}
+.overlay_contact{
+    height: 512px;
+  }
 @keyframes float_menu {
     from{
         transform: translateX(750px);

@@ -3,6 +3,9 @@
   .portfolio_title,.description p,.projects{
     left: 50px;
   }
+  .overlay_contact{
+    height: 400px;
+  }
 } 
 
 /* media for large pc */
@@ -35,6 +38,11 @@
   .portfolio_title h1{
     font-size: 40px;
   }
+
+  .overlay_contact{
+    height: 512px;
+  }
+  
 }
 /* media for mobiles */
 @media(max-width:576px){
@@ -85,6 +93,15 @@
   .why_us_title {
     text-align: center;
   }
+
+  .contact h2 {
+    font-size: 25px;
+  }
+  
+  .left-inner-addon input,textarea.form-control {
+    min-width: 240px;
+  }
+  
 }
 
 @media(min-width:576px){
@@ -99,6 +116,12 @@
     padding-left: 10px;
     width: 45%;
   }
+  .overlay_contact{
+    height: 300px;
+  }
+  .contact {
+    transform: translate(-50%, -150%);
+  }
 }
 
 /* media for tablette */
@@ -109,6 +132,10 @@
     left: initial;
     margin-top: 22px;
   }
+  .contact h2{
+    font-family:'Inconsolata', monospace;
+    font-size: 38px;
+}
 }
 /* media for tablette and up */ 
 
@@ -139,4 +166,16 @@
     }
   }
   
+
+  /* only pc an up */
+  @media(max-width:992px){
+    .form {
+      flex-direction: column;
+      
+    }
+    .left-inner-addon ,textarea.form-control{
+      margin-bottom: 20px;
+    }
+
+  }
 
