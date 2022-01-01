@@ -16,12 +16,17 @@
 	<link rel="stylesheet" type="text/css" href="css/elastic_grid.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="dist/css/simple-lightbox.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/modernizr.custom.js"></script>
     <script src="js/classie.js"></script>
     <script type="text/javascript" src="js/jquery.elastislide.js"></script>
     <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
     <script type="text/javascript" src="js/elastic_grid.js"></script>
+    <script src="dist/js/simple-lightbox.min.js"></script>
+    <script src="dist/js/simple-lightbox.legacy.min.js"></script>
+    <script src="dist/js/simple-lightbox.jquery.min.js"></script>
+    <!-- <script src="dist/simple-lightbox.legacy.js"></script> -->
     <!-- <link rel="stylesheet" type="text/css" href="https://www.jqueryscript.net/tags.php?/grid/">grid</=>.min.css" /> -->
 
 
@@ -120,7 +125,7 @@
         <div class="section-header">
 
             <div>
-                <img src="img/cosmos.png" alt="">
+                <img src="img/logo.png" alt="">
             </div>
             <div>
                 <ul class="header-menu d-none d-lg-block">
@@ -374,10 +379,11 @@
                         <div class="pricing-title">
                             <div class="price-title">
                                 <h3> Site Vitrine </h3>
+                                
                             </div>
                            
                             <div class="price">
-                                <h2>2700</h2>
+                                <p>A partir de </p><h2>  2700</h2>
                             </div>
                             
                         </div>
@@ -424,7 +430,7 @@
                             </div>
                            
                             <div class="price">
-                                <h2>2700</h2>
+                                <p>A partir de </p>   <h2>2700</h2>
                             </div>
                             
                         </div>
@@ -469,7 +475,7 @@
                             </div>
                            
                             <div class="price">
-                                <h2>2700</h2>
+                                <p>A partir de </p>   <h2>2700</h2>
                             </div>
                             
                         </div>
@@ -512,16 +518,12 @@
      <div> <div class="overlay_contact"></div></div>
     
      <div class="contact">
-        <div class="container">
+    <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-12">
                     <div class="form-headline">
                         <h2>si vous avez un projet ou une idéé de colaboration n'hésitez pas</h2>
-                    </div>
-                    
-                  
-                      
-                       
+                    </div> 
                 </div>
                 <div class="form">
                     <div class="container">
@@ -532,26 +534,26 @@
                                 <i class="bx bx-user"></i>
                                 <input 
                                        class="form-control" 
-                                       placeholder="Left icon" />
+                                       placeholder="Nom complet *" />
                             </div>
                         </div>
                     </div>
                 <div class="col-12 col-md-6 col-lg-3 ">
                     <div>
                         <div class="left-inner-addon input-container">
-                            <i class="bx bx-user"></i>
+                            <i class='bx bx-envelope-open'></i>
                             <input 
                                    class="form-control" 
-                                   placeholder="Left icon" />
+                                   placeholder="Adresse e-mail *" />
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div>
                         <div class="left-inner-addon input-container">
-                            <textarea cols="2" rows="2"
+                            <input cols="2" rows="2"
                                    class="form-control" 
-                                   placeholder="Left icon" />
+                                   placeholder="Message" />
                             </textarea>
                         </div>
                     </div>
@@ -565,104 +567,236 @@
             </div>
         </div>
     </div> 
-        <div class="floating-menu">
-            <div class="top-menu">
-                <div class="logo-menu">
-                    <img src="img/logo.png" alt="">
-                </div>
-                <div class="close-menu">
-                    <i class='bx bx-x'></i>
-                </div>
-            </div>
-    <div class="drop-down-menu">
-        <div class="vertical-menu">
-            <li> 
-                <span class="flex-gap">
-                    <a href="#"> Home </a> 
-                    <div class="plus-menu">
+    </div>
+    <div class="footer pt-8">
+         <div class="container">
+             <div class="row">
+                 <!-- <div class="contact_footer_items"> -->
+                    <div class="col-12 col-sm-6  col-md-6 col-lg-3">
+                        <div class="contact_footer">
+                            <span class="logo-footer"><img src="img/logo.png" alt=""></span>
+                            <div class="social-icon">
+                              <span><i class='bx bx-map'></i></span>
+                              <p>Hay Rahma n 625 salé</p>
+                            </div>
+                             <div class="social-icon">
+                              <span><i class='bx bx-phone'></i></span>
+                              <p>0691904910</p>
+                             </div>
+                             <div class="social-icon">
+                              <span><i class='bx bx-envelope-open'></i></span>
+                              <p style="word-break:break-word;">moussaeloifi14@gmail.om</p>
+                            </div>
+                            <div class="social-media">
+                                <div>
+                                    <span><i class='bx bxl-facebook'></i></span>
+                                </div>
+                                <div>
+                                    <span><i class='bx bxl-linkedin'></i></span>
+                                </div>
+                                <div>
+                                    <span><i class='bx bxl-twitter'></i></span>
+                                </div>
+                                <div>
+                                    <span><i class='bx bxl-youtube'></i></span>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="contact_footer gap-0">
+                        <span class="logo-footer">
+                            <h2>Services</h2>
+                        </span>
+                        <ul>
+                            <span>
+                                <i class='bx bx-check'></i> 
+                                <li>Intégration Html</li>
+                            </span>
+                            <span>
+                                <i class='bx bx-check'></i> 
+                                <li>Intégration cms</li>
+                            </span>
+                            <span>
+                                <i class='bx bx-check'></i> 
+                                <li>Développement spécifique</li>
+                            </span>
+                            <span>
+                                <i class='bx bx-check'></i> 
+                                <li>Création des sites ecommerce</li>
+                            </span>
+                        </ul>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="contact_footer gap-0">
+                        <span class="logo-footer">
+                            <h2>Newsletter</h2>
+                        </span>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, necessitatibus.</p>
+                        <form action="">
+                            <input 
+                                       class="form-control" 
+                                       placeholder="Entrez votre E-mail *" />
+                        </form>
                         
-                    <i class='bx bx-plus'></i>
                     </div>
-                </span>
-            
-                <ul class="hide">
-                    <li>home1</li>
-                    <li>home2</li>
-                </ul>
-            </li>
-            <li> 
-                <span class="flex-gap">
-                    <a href="#"> Home </a> 
-                    <div class="plus-menu ">
-                    <i class='bx bx-plus'></i>
+                    <div class="call_to_action mb-4">
+                        <button>
+                            <span>Abonnez Vous</span>
+                            <span><i class='bx bx-right-arrow-alt'></i></span>
+                        </button>
+                        
                     </div>
-                </span>
-            
-                <ul class="hide">
-                    <li>home1</li>
-                    <li>home2</li>
-                </ul>
-            </li>
+                  </div>
+                  
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <span class="logo-footer">
+                        <h2>Galerie</h2>
+                    </span>
+                    <div class="grid-container gallery">
+                        <div class="grid-item primary">
+                            <a href="images/large/allo_school_math_large_1.png" class="big" rel="rel1">
+                                <img src="images/large/allo_school_math_large_1.png" alt="" title="alloschoolmath.com">
+                                <div class="secondary">
+                                    <p><i class='bx bx-plus'></i></p>
+                                </div>
+                            </a>
+                           
+                        </div>
+                        <div class="grid-item primary">
+                            <a href="images/large/centre_kine_large_1.png" class="big" rel="rel1">
+                                <img src="images/large/centre_kine_large_1.png" alt="" title="centrebelge.com">
+                                <div class="secondary">
+                                    <p><i class='bx bx-plus'></i></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item primary">
+                            <a href="images/large/maroc-emplois_large_1.png" class="big" rel="rel1">
+                                <img src="images/large/maroc-emplois_large_1.png" alt="" title="maroc-emplois.net">
+                                <div class="secondary">
+                                    <p><i class='bx bx-plus'></i></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item primary">
+                            <a href="images/large/global-fairs_large.png" class="big" rel="rel1">
+                                <img src="images/large/global-fairs_large.png" alt="" title="global-fairs.com">
+                                <div class="secondary">
+                                    <p><i class='bx bx-plus'></i></p>
+                                </div>
+                            </a>
+                        </div>
+                       
+                       
+                      </div>
+                  </div>
+                 </div>
+               
+             </div>
+         </div>
+    </div>
+    <div class="floating-menu">
+        <div class="top-menu">
+            <div class="logo-menu">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="close-menu">
+                <i class='bx bx-x'></i>
+            </div>
+        </div>
+<div class="drop-down-menu">
+    <div class="vertical-menu">
+        <li> 
+            <span class="flex-gap">
+                <a href="#"> Home </a> 
+                <div class="plus-menu">
+                    
+                <i class='bx bx-plus'></i>
+                </div>
+            </span>
         
-            <li> 
-                <span class="flex-gap no-ul">
-                    <a href="#"> Home </a>   
-                </span>
+            <ul class="hide">
+                <li>home1</li>
+                <li>home2</li>
+            </ul>
+        </li>
+        <li> 
+            <span class="flex-gap">
+                <a href="#"> Home </a> 
+                <div class="plus-menu ">
+                <i class='bx bx-plus'></i>
+                </div>
+            </span>
+        
+            <ul class="hide">
+                <li>home1</li>
+                <li>home2</li>
+            </ul>
+        </li>
+    
+        <li> 
+            <span class="flex-gap no-ul">
+                <a href="#"> Home </a>   
+            </span>
+        
             
-                
-            </li>
-            <li> 
-                <span class="flex-gap">
-                    <a href="#"> Home </a> 
-                    <div class="plus-menu">
-                        
-                    <i class='bx bx-plus'></i>
-                    </div>
-                </span>
-            
-                <ul class="hide">
-                    <li>home1</li>
-                    <li>home2</li>
-                </ul>
-            </li>
+        </li>
+        <li> 
+            <span class="flex-gap">
+                <a href="#"> Home </a> 
+                <div class="plus-menu">
+                    
+                <i class='bx bx-plus'></i>
+                </div>
+            </span>
+        
+            <ul class="hide">
+                <li>home1</li>
+                <li>home2</li>
+            </ul>
+        </li>
+    </div>
+</div>
+<div class="social">
+    <h2>Contact Info</h2>
+    <div class="social-icons">
+        <div class="social-icon">
+            <span><i class='bx bx-map'></i></span>
+            <p>Hay Rahma n 625 salé</p>
+        </div>
+        <div class="social-icon">
+            <span><i class='bx bx-phone'></i></span>
+            <p>0691904910</p>
+        </div>
+        <div class="social-icon">
+            <span><i class='bx bx-envelope-open'></i></span>
+            <p style="word-break:break-word;">moussaeloifi14@gmail.om</p>
         </div>
     </div>
-    <div class="social">
-        <h2>Contact Info</h2>
-        <div class="social-icons">
-            <div class="social-icon">
-                <span><i class='bx bx-map'></i></span>
-                <p>Hay Rahma n 625 salé</p>
-            </div>
-            <div class="social-icon">
-                <span><i class='bx bx-phone'></i></span>
-                <p>0691904910</p>
-            </div>
-            <div class="social-icon">
-                <span><i class='bx bx-envelope-open'></i></span>
-                <p style="word-break:break-word;">moussaeloifi14@gmail.om</p>
-            </div>
-        </div>
+</div>
+<div class="social-media">
+    <div>
+        <span><i class='bx bxl-facebook'></i></span>
     </div>
-    <div class="social-media">
-        <div>
-            <span><i class='bx bxl-facebook'></i></span>
-        </div>
-        <div>
-            <span><i class='bx bxl-linkedin'></i></span>
-        </div>
-        <div>
-            <span><i class='bx bxl-twitter'></i></span>
-        </div>
-        <div>
-            <span><i class='bx bxl-youtube'></i></span>
-        </div>
+    <div>
+        <span><i class='bx bxl-linkedin'></i></span>
     </div>
-        </div> 
+    <div>
+        <span><i class='bx bxl-twitter'></i></span>
+    </div>
+    <div>
+        <span><i class='bx bxl-youtube'></i></span>
+    </div>
+</div>
+    </div> 
   
-        
-   
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+        <script>
+            var gallery = $('.gallery a').simpleLightbox({
+            });
+            </script>
+    
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>

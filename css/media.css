@@ -102,6 +102,7 @@
     min-width: 240px;
   }
   
+  
 }
 
 @media(min-width:576px){
@@ -176,6 +177,7 @@
     .left-inner-addon ,textarea.form-control{
       margin-bottom: 20px;
     }
+    
 
   }
 

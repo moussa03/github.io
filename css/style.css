@@ -50,6 +50,11 @@ body{
     padding-left: 12px;
     padding-right: 12px;
 }
+
+.footer .container{
+    padding-left: 12px;
+    padding-right: 12px;
+}
 .overlay{
     position: absolute;
     background: black;
@@ -274,12 +279,12 @@ font-weight: bold;
 padding: 10px;
 }
 
-.social-icon{
+/* .social-icon{
 display: flex;
 gap: 15px;
-margin-bottom: 20px;
+margin-bottom: 0px;
 align-items: center;
-}
+} */
 
 .social-icon span{
 width: 40px;
@@ -865,7 +870,7 @@ top: 232px;
     vertical-align: middle;
 }
 .skills button:hover{
-    background: #d5d9de;
+    background: #7a8694;
     color:#ff5041;
     transition:background-color 0.3s;
     -webkit-transition:background-color 0.3s;
@@ -1039,6 +1044,13 @@ top: 232px;
     width: 174px;
   }
 
+  .price p{
+    text-align: left;
+    font-size: 24px;
+    /* font-weight: bold; */
+    color: #ff5041;
+    font-family: 'Inconsolata', monospace;
+  }
   .price-title {
    
     position: relative;
@@ -1113,6 +1125,9 @@ top: 232px;
 .left-inner-addon input {
     padding-left: 35px !important; 
 
+}
+.left-inner-addon i{
+    color:#ff5041 ;
 }
 .left-inner-addon input:focus,.left-inner-addon textarea:focus{
     box-shadow: none;
@@ -1189,6 +1204,16 @@ input {
     font-family: 'Inconsolata', monospace;
     width: 100%;
  }
+
+ .contact_footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+ }
+
+ .contact_footer  .social-icon {
+     margin-bottom: 0px;
+ }
  /* .form button,.left-inner-addon input,textarea.form-control {
     min-width: 240px;
   } */
@@ -1203,9 +1228,95 @@ input {
 .form-headline {
     text-align: center;
 }
-.overlay_contact{
-    height: 512px;
+
+.footer {
+    background: #f6f8fa;
+}
+
+
+.footer .contact_footer{
+    margin-bottom: 30px;
+}
+.contact_footer .social-media{
+    width: 240px;
+    margin-left: initial !important;
+    margin-right: initial !important;
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+.contact_footer ul{
+   list-style: none;
+   padding: 0px;
+}
+.contact_footer span{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 2px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.contact_footer span i{
+    color:#ff5041
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    position: relative;
+}
+.grid-item img{
+    width: 100%;
+}
+
+
+   .primary {
+    position: relative;
+    /* width: 200px;
+    height: 200px; */
+    cursor: pointer;
   }
+  
+  .secondary {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    background: black;
+    color: white;
+    transition: 0.4s ease-out;
+  }
+  
+  .primary:hover .secondary {
+    opacity: 0.6;
+  }
+  
+  .secondary p {
+    margin: 0;
+    font-size: 32px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+
+/* .grid-item::before{
+    content: '';
+    position: absolute !important;
+    width: 46%;
+    height: 46%;
+    left: 0;
+    top: 0;
+    background-color: black;
+    opacity: 0.3;
+} */
 @keyframes float_menu {
     from{
         transform: translateX(750px);
