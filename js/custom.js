@@ -39,7 +39,7 @@
                 'animation-fill-mode':'forwards'
             });
             $('.burger-menu').show("slow");
-             $('.container').css({'margin-right':'auto'});
+            //  $('.container').css({'margin-right':'auto'});
             $('.floating-menu').hide("slow");
             $('.hide_call').show();
     })

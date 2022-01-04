@@ -6,6 +6,9 @@
   --container-Width-large-pc:1350px;
 } */
 
+body {
+    user-select: none
+}
 .pt-8{
     padding-top: 80px;
 }
@@ -76,13 +79,13 @@ body{
     background-size: cover;
     height: 630px;
 }
-.section-top::after{
+/* .section-top::after{
     content: "";
     background: url('../img/shape_leftmiddle.png') center top;
     position: absolute;
     top: 0;
     left: 0;
-}
+} */
 /* .section-header{
     background: url('../img/shape_leftmiddle.png') center top;
     background-size: cover;
@@ -515,7 +518,7 @@ border-radius: 50%;
 .menu{
     display: flex;
     justify-content: flex-end;
-    overflow: hidden;
+    /* overflow: initial; */
     gap: 40px;
    
 }
@@ -770,7 +773,7 @@ top: 232px;
     color: white;
 }
 
-.about_background::after{
+/* .about_background::after{
     content: "";
     position: absolute;
     background: url(../img/feature_illustration.png);
@@ -779,7 +782,7 @@ top: 232px;
     background-size: cover;
     right: 29px;
     top: 108px;
-}
+} */
 
 .learn_more button{
     border: none;
@@ -1260,7 +1263,7 @@ input {
     padding-top: 10px;
 }
 .contact_footer span i{
-    color:#ff5041
+    color:#ff5041;
 }
 .grid-container{
     display: grid;
@@ -1342,8 +1345,8 @@ to{
         -webkit-transform: translateX(0px);
         -moz-transform: translateX(0px);
         -ms-transform: translateX(0px);
-        -o-transform: translateX(0px);         
-    }
+        -o-transform: translateX(0px);
+}
 
     to{
         transform: translateX(750px);
@@ -1373,3 +1376,32 @@ to{
     -o-transform: rotate(360deg);
 }
 }
+
+/* contact page */
+.contact_us{
+    padding-top: 20px;
+}
+.heading_contact span{
+    font-family:'Inconsolata', monospace;
+    color:#ff5041;
+    font-size: 24px;
+}
+.heading_contact span i {
+vertical-align: middle;
+}
+.subheading h2 {
+    padding-top: 20px;
+}
+
+.contact_details{
+    padding: 25px 16px;
+    border-radius: 6px;
+    margin-bottom: 29px;
+    background: #fbfbfb94;
+    color: #52525d;
+}
+.phone span:first-child{
+    font-size: 30px;
+    color: #ff5041;
+}
+

@@ -1,0 +1,28 @@
+ .section-header::after{
+        background: none !important;
+    }
+    .section-top{
+        height: auto;
+    }
+
+    .menu {
+        overflow: initial;
+    }
+    .call_to_action button {
+        padding: 13px 15px;
+    }
+    .form-control{
+        width: 80%;
+    }
+    textarea#w3review{
+        width: 80% !important;
+    }
+    select#validationCustom04{
+        width: 80% !important;
+
+    }
+    @media (min-width: 992px) {
+    .section-header::after {
+        left:initial !important;
+    }
+}

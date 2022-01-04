@@ -42,7 +42,9 @@
   .overlay_contact{
     height: 512px;
   }
-  
+  .vertical-menu li ul{
+    width: 260px;
+  }
 }
 /* media for mobiles */
 @media(max-width:576px){
@@ -111,6 +113,7 @@
     width: 60%;
   }
  
+  
 }
 @media(min-width:992px){
   .floating-menu {
