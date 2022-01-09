@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my_portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
    
@@ -13,23 +12,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="css/demo.css" />
-	<link rel="stylesheet" type="text/css" href="css/elastic_grid.css" />
+    
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="dist/css/simple-lightbox.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/modernizr.custom.js"></script>
     <script src="js/classie.js"></script>
-    <script type="text/javascript" src="js/jquery.elastislide.js"></script>
-    <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
-    <script type="text/javascript" src="js/elastic_grid.js"></script>
     <script src="dist/js/simple-lightbox.min.js"></script>
     <script src="dist/js/simple-lightbox.legacy.min.js"></script>
     <script src="dist/js/simple-lightbox.jquery.min.js"></script>
-    <!-- <script src="dist/simple-lightbox.legacy.js"></script> -->
-    <!-- <link rel="stylesheet" type="text/css" href="https://www.jqueryscript.net/tags.php?/grid/">grid</=>.min.css" /> -->
-
-
     <title>Document</title>
 </head>
 <body>
@@ -39,206 +32,74 @@
             </div>
             
             <div class="section-top">
-            <div class="section-header">
-    
-                <div>
-                    <img src="img/logo.png" alt="">
-                </div>
-                <div>
-                    <ul class="header-menu d-none d-lg-block">
-                        <li>
-                            Home
-                        </li>
-                       
-                        <li>
-                            Services
-                            <ul class="dropdown">
-                                <li><a href="">service1</a></li>
-                                <li><a href="">service2</a></li>
-                            </ul>
-                            
-                        </li>
-                        <li>
-                            Projects
-                            <ul class="dropdown">
-                                <li><a href="">project1</a></li>
-                                <li><a href="">project2</a></li>
-                            </ul>
-                            
-                        </li>
-                        <li>Contact Us</li>
-                        <li>Contact Us</li>
-                    </ul>
-                </div>
-                <div class="right-header">
-                        <div class="burger-menu">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
+                <div class="section-header">
+
+                    <div>
+                        <img src="img/logo.png" alt="">
+                    </div>
+                    <div>
+                        <ul class="header-menu d-none d-lg-block">
+                            <li>
+                               <a href="/">Home</a> 
+                            </li>
+                           
+                            <!-- <li>
+                                Services
+                                <ul class="dropdown">
+                                    <li><a href="">service1</a></li>
+                                    <li><a href="">service2</a></li>
+                                </ul>
+                                
+                            </li> -->
+                            <!-- <li>
+                                Projects
+                                <ul class="dropdown">
+                                    <li><a href="">project1</a></li>
+                                    <li><a href="">project2</a></li>
+                                </ul>
+                                
+                            </li> -->
+                            <li><a href="#service"> Service</a> </li>
+                            <li><a href="#portfolio" > Projets </a> </li>
+                            <li><a href="/contactez_nous.html">  Contactez Nous</a> </li>
+                        </ul>
+                    </div>
+                    <div class="right-header">
+                    
+                            <div class="d-none d-sm-block call_to_action">
+                                <button>
+                                        <span> <a href="/contactez_nous.html"> Demandez un devis grartuit </a> </span>
+                                    <span><i class='bx bx-right-arrow-alt'></i></span>
+                                </button>
+                                
+                            </div>
+                        
+                    
+                            <div class="burger-menu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        
+                    </div>
                     
                 </div>
-                
-            </div>
+                <div class="blog-title">
+                    <h1>Blog</h1>
+                </div>
             <div class="contact_us">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 col-md-6 col-lg-6">
-                            <div class="heading_contact">
-                                <span><i class='bx bxl-skype'></i></span>
-                                <span>lets talks</span>
-                                <div class="subheading">
-                                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, soluta.</h2>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, tempore.</p>
+                        <!-- <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/feature_woman.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-primary">Go somewhere</a>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-6">
-                            <div class="contact_details">
-                                <div class="phone_whatsap">
-                                    <div class="phone">
-                                        <span><i class='bx bxs-phone-call'></i></span>
-                                       <span>0691904910</span>
-                                    </div>
-                                    <div class="phone">
-                                        <span><i class='bx bxl-whatsapp' ></i></span>
-                                         <span>0691904910</span>
-                                    </div>
-                                    
-                                </div>
-                                <div></div>
-                            </div>
-                            <div class="contact_details">
-                                <div class="phone_whatsap">
-                                    <div class="phone">
-                                        <span><i class='bx bx-envelope-open'></i></span>
-                                       <span>moussaeloifi14@gmail.com</span>
-                                    </div>
-                                    <div class="phone">
-                                        <span><i class='bx bx-map-alt'></i></span>
-                                         <span>Hay rahma salé n 625</span>
-                                    </div>
-                                    
-                                </div>
-                                <div></div>
-                            </div>
-                            <div class="form_devis">
-                                <div class="form-apply">                        
-                                    <div class="form-body">
-                
-                                        <form action="mail.php" method="post" enctype="multipart/form-data" class="needs-validation" novalidate id="upload_form">
-                                            <div class="form-group mb-3">                        
-                                              <input  class="form-control"  id="validationCustom01"  required name="name" aria-describedby="emailHelp" required placeholder="Nom Complet*">
-                                              <!-- <div class="valid-feedback">
-                        
-                                              Looks good!
-                        
-                                             </div> -->
-                        
-                                             <div class="invalid-feedback">
-                        
-                                             veuillez renseigner votre nom
-                        
-                                            </div>
-                        
-                                            <div class="valid-feedback">
-                        
-                                                <!-- Looks good! -->
-                        
-                                            </div>
-                        
-                                            </div>
-                        
-                                            <div class="form-group mb-3">
-                        
-                                            <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" class="form-control" id="validationCustom02" name="email" id="exampleInputPassword1" required placeholder="Adresse e-mail*">
-                        
-                                              <!-- <div class="valid-feedback">
-                        
-                                                Looks good!
-                        
-                                              </div> -->
-                        
-                                              <div class="invalid-feedback">
-                        
-                                              veuillez renseigner votre adresse e-mail
-                        
-                                              </div>
-                        
-                                            </div>
-                        
-                                            <div class="form-group mb-3">
-                        
-                        
-                                                 </div>
-                        
-                                                 <div class="form-group mb-3">
-                        
-                                                 <div class="group mb-3">
-                        
-                                                 
-                                                    <div class="invalid-feedback">
-                        
-                                                    Veuillez choisir un poste
-                        
-                                                    </div>
-                        
-                                                </div>
-                        
-                                              <!-- <div class="form-group mb-3 mt-3 d-inline-block">
-                        
-                                                
-                        
-                                                <input type="file" class="custom-file-input">
-                        
-                                              </div> -->
-                        
-                                             
-                                              <div class="form-group mb-3">
-                                                <select class="form-select" id="validationCustom04" name="job_position" required>
-                                                <option selected disabled value="">Choose...</option>
-                                                    <option value="0">Site Vitrine</option>
-                                                    <option value="1">Site E-commerce</option>
-                                                    <option value="2">Site Dynamique</option>
-                                                    <option value="3">Application mobile</option>
-                                                    <option value="3">Design graphique</option>
-                                                </select>
-                                                <div class="invalid-feedback">
-                                                veuillez séléctionner type de votre projet
-                                                </div>
-                                                </div>
-                                              <div class="form-group mb-3">
-                        
-                                                <textarea id="w3review" placeholder="Bref Description du projet?" cols="30" rows="3" name="message"></textarea>
-                        
-                                              </div>
-                                               
-  
-                        
-                                                   <!-- <div class="alert alert-success" role="alert">
-                        
-                                                     Nous avons bien reću votre projet et nous vous contacterez  le plus proche possible   
-                        
-                                                  </div> -->
-                        
-                                                    <div class="call_to_action">
-                                                        <button>
-                                                            <span>Demandez un devis grartuit</span>
-                                                            <span><i class='bx bx-right-arrow-alt'></i></span>
-                                                        </button>
-                                                        
-                                                    </div>
-                        
-                                            </form>
-                                        
-                        
-                                        
-                        
-                                    </div>
-                        
-                                </div>
-                            </div>
-                        </div>
+                              </div>
+                        </div>   -->
                     </div>
                 </div>
                 </div>
@@ -393,7 +254,7 @@
                            </span>
                            <span>
                                <i class='bx bx-check'></i> 
-                               <li>Développement spécifique</li>
+                               <li>Développement sécifique</li>
                            </span>
                            <span>
                                <i class='bx bx-check'></i> 
@@ -476,41 +337,31 @@
 </script>
 <script>
 
-    (function () {
+        $.ajax({
+    url: "https://newsapi.org/v2/top-headlines?country=fr&apiKey=ded65d85754a428c88faba4d2e8d8f4a",
+    success: function(result){
+    
+    
+    Object.keys(result.articles).forEach(key => {
+        $('.contact_us .row').append('<div class="col-12 col-md-6 col-lg-4">'+
+                           '<div class="card" style="width: 18rem;">'+
+                            //    '<img src="'+result.articles[key].urlToImage+'" class="card-img-top" alt="...">'+
+                               '<a href="'+result.articles[key].url+'"> <img src="'+result.articles[key].urlToImage+'" class="card-img-top" alt="..."> </a>'+
+                               '<div class="card-body">'+
+                                  '<h5 class="card-title">'+result.articles[key].title+'</h5>'+
+                                  '<p class="card-text">'+result.articles[key].description+'</p>'+
+                                  '<a href="'+result.articles[key].url+'" class="btn btn-primary">Voir article Source</a>'+
+                                '</div>'+
+                             '</div>'+
+                            '</div>')
 
-'use strict'
+    console.log(result.articles[key]); // the value of the current key.
 
+    });
+         
 
-
-// Fetch all the forms we want to apply custom Bootstrap validation styles to
-
-var forms = document.querySelectorAll('.needs-validation')
-
-
-
-// Loop over them and prevent submission
-
-Array.prototype.slice.call(forms)
-
-.forEach(function (form) {
-
-  form.addEventListener('submit', function (event) {
-
-    if (!form.checkValidity()) {
-
-      event.preventDefault()
-
-      event.stopPropagation()
-
-    }
-
-    form.classList.add('was-validated')
-
-  }, false)
-
-})
-
-})()
+  }});
+   
 
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>

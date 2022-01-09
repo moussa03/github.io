@@ -104,13 +104,34 @@ body{
     background: #ff5041;
     color: white;
 }
+.call_to_action button span a {
+    color: white;
+    text-decoration: none;
+}
+.projects button:hover{
+    background: #ff5041;
+    border: none;
+    color: white;
+    transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+}
+.call_to_action button:hover > span a{
+     color: black;
+}
+/* .call_to_action button a{
+    color: white !important;
+    text-decoration: none;
+} */
 
 .call_to_action button span i{
     vertical-align: middle;
 }
 .projects{
     position: absolute;
-    top: 508px;
+    top: 562px;
     left: 152px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -124,19 +145,16 @@ body{
     font-weight: bold;
 }
 
-.projects button:hover{
-    background: #ff5041;
-    border: none;
-    color: white;
-    transition: background-color 0.5s;
-    -webkit-transition: background-color 0.5s;
-    -moz-transition: background-color 0.5s;
-    -ms-transition: background-color 0.5s;
-    -o-transition: background-color 0.5s;
-}
+
 .projects button span i{
     vertical-align: middle;
 }
+/* .call_to_action  button span a{
+ 
+color: white;
+
+} */
+
 
 .call_to_action button:hover{
    background: transparent;
@@ -148,7 +166,17 @@ body{
    -ms-transition: background-color 0.5s;
    -o-transition: background-color 0.5s;
 }
-
+.call_to_action button:hover + button span#devis a{
+    color: black !important;
+    /* transition: color 0.4s;
+    -webkit-transition: color 0.4s;
+    -moz-transition: color 0.4s;
+    -ms-transition: color 0.4s;
+    -o-transition: color 0.4s; */
+}
+button span#devis a {
+    color: white;
+}
 .call_to_action button span:nth-child(2){
     padding-left: 10px;
 }
@@ -334,7 +362,7 @@ margin-right: 0px;
     height: 200px;
     border-radius: 50%;
     width: 200px;
-    background: url(../img/hero_woman.png) right no-repeat;
+    background: url(../img/moussa.jpg) right no-repeat;
     background-size: contain;
 }
 
@@ -618,6 +646,14 @@ border-radius: 50%;
     color: #ff5041;
     cursor: pointer;
 }
+.header-menu li a{
+    color:#212529 ;
+    text-decoration: none;
+}
+.header-menu li a:hover{
+    color: #ff5041;
+    cursor: pointer;
+}
 .dropdown {
     position: absolute;
     padding: 0;
@@ -675,7 +711,7 @@ top: 232px;
     content: "";
     width: 1px;
     border-left: 3px solid #ff5041;
-    top: 18px;
+    top: 61px;
     /* margin-right: 6px; */
     left: -26px;
 
@@ -773,7 +809,7 @@ top: 232px;
     color: white;
 }
 
-/* .about_background::after{
+.about_background::after{
     content: "";
     position: absolute;
     background: url(../img/feature_illustration.png);
@@ -782,7 +818,7 @@ top: 232px;
     background-size: cover;
     right: 29px;
     top: 108px;
-} */
+}
 
 .learn_more button{
     border: none;
@@ -792,6 +828,11 @@ top: 232px;
     background: #d5d9de;
     font-weight: bold;
 }
+
+.learn_more button span a {
+    color: #ff5041;
+    text-decoration: none;
+}
 .learn_more button:hover{
     background:#ff5041 ;
     color: white;
@@ -800,6 +841,14 @@ top: 232px;
     -moz-transition: background-color 0.4s;
     -ms-transition: background-color 0.4s;
     -o-transition: background-color 0.4s;
+}
+.learn_more button:hover > span a {
+    color: white !important;
+    transition: 0.4s color;
+    -webkit-transition: 0.4s color;
+    -moz-transition: 0.4s color;
+    -ms-transition: 0.4s color;
+    -o-transition: 0.4s color;
 }
 .learn_more button span i{
     vertical-align: middle;
@@ -873,7 +922,7 @@ top: 232px;
     vertical-align: middle;
 }
 .skills button:hover{
-    background: #7a8694;
+    background: #e0e4e9;
     color:#ff5041;
     transition:background-color 0.3s;
     -webkit-transition:background-color 0.3s;

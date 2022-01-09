@@ -1,28 +1,59 @@
- .section-header::after{
-        background: none !important;
-    }
-    .section-top{
-        height: auto;
-    }
+.section-header::after{
+    background: none !important;
+}
+.section-top{
+    height: auto;
+}
 
-    .menu {
-        overflow: initial;
-    }
-    .call_to_action button {
-        padding: 13px 15px;
-    }
-    .form-control{
-        width: 80%;
-    }
-    textarea#w3review{
-        width: 80% !important;
-    }
-    select#validationCustom04{
-        width: 80% !important;
+.menu {
+    overflow: initial;
+}
+.call_to_action button {
+    padding: 13px 15px;
+}
+.form-control{
+    width: 80%;
+}
+textarea#w3review{
+    width: 80% !important;
+}
+select#validationCustom04{
+    width: 80% !important;
 
-    }
-    @media (min-width: 992px) {
-    .section-header::after {
-        left:initial !important;
-    }
+}
+@media (min-width: 992px) {
+.section-header::after {
+    left:initial !important;
+}
+}
+
+.card-title{
+    text-align: center;
+    padding: 10px 10px;
+
+}
+
+.card-body{
+    text-align: center;
+    background: #f4f4f5;
+
+}
+.card-body p{
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.blog-title h1 {
+    font-family: 'Inconsolata', monospace;
+}
+
+.card {
+    margin-bottom: 30px;
+    width: 20rem !important;
+}
+
+.card img{
+    /* width: 80%; */
+    margin-right: auto;
+    margin-left: auto;
 }
